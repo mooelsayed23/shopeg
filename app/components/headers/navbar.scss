@@ -1,0 +1,93 @@
+.menu-category,.dropdown-list {
+    padding: 15px 0;
+
+    div,
+    ul {
+        display: none;
+
+    }
+
+}
+
+.menu-category:hover {
+    div {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        box-sizing: border-box;
+        background: #fff;
+        pointer-events: all;
+        left: 0;
+        gap: 30px;
+        width: 100%;
+        opacity: 1;
+        padding: 30px;
+
+        box-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.1);
+        -webkit-transform: translateY(15px);
+        -moz-transform: translateY(15px);
+        -ms-transform: translateY(15px);
+        -o-transform: translateY(15px);
+        transform: translateY(15px);
+
+        ul {
+            display: block;
+
+            li {
+
+                position: relative;
+                padding: 10px 0;
+
+                a {
+
+                    color: #787878 !important;
+                    font-size: 14px;
+                    font-family: sans-serif;
+                }
+            }
+
+            li:first-child {
+                a:first-child::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: #787878 !important;
+                    
+                }
+            }
+        }
+
+    }
+
+    .dropdown-list {
+        display: block;
+        position: absolute;
+        background: #fff;
+        width: fit-content;
+        border: 1px solid #eee;
+        padding: 20px;
+        color: #787878 !important;
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+        box-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.1);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-transform: translateY(15px);
+        -moz-transform: translateY(15px);
+        -ms-transform: translateY(15px);
+        -o-transform: translateY(15px);
+        transform: translateY(15px);
+        li {
+            padding: 6px 0;
+            height: 31.2px;
+        }
+        
+}
+
+}
