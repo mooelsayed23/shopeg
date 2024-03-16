@@ -123,10 +123,10 @@ const Prodmain = () => {
   ];
 
   return (
-    <div className="columns-2">
+    <div className="columns-2 px-5">
       {products.map((item, index) => (
-        <div className="product-card relative " key={index}>
-          <div className="product-images relative border">
+        <div className="product-card relative border bg-white rounded-xl hover:shadow-2xl p-5 mb-5" key={index}>
+          <div className="product-images relative ">
             <img
               src={item.image_url1}
               alt={item.name}
@@ -163,7 +163,7 @@ const Prodmain = () => {
             </div>
           </div>
 
-          <div className="showcase-content absolute bottom-0 left-0 z-40">
+          <div className="showcase-content absolute bottom-0 left-0 z-40 m-4">
             <a href="#" className="showcase-category">
               {item.category}
             </a>
