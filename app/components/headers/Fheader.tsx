@@ -5,7 +5,7 @@ const Fheader = () => {
   return (
     <>
       <div className="header-top py-1 border-b hidden sm:flex">
-        <div className="container flex justify-around items-center m-auto">
+        <div className="w-11/12 flex m-auto justify-between items-center">
           <ul className="header-social-container hidden lg:flex items-center">
             <li>
               <a href="#" className="social-link">

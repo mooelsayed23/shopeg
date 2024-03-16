@@ -4,8 +4,8 @@ import "./navbar.scss";
 const Navbar = () => {
   return (
     <>
-      <nav className="desktop-navigation-menu hidden lg:flex container m-auto">
-        <div className="container flex w-full m-auto">
+      <nav className="desktop-navigation-menu hidden lg:flex mx-auto">
+        <div className="container flex w-11/12 mx-auto">
           <ul className="desktop-menu-category-list flex m-auto font-bold space-x-10 relative">
             <li className="menu-category">
               <a href="#" className="menu-title">
