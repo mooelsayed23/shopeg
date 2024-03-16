@@ -27,10 +27,10 @@ const Prodfutch = () => {
       <div className="product-featured border p-4 m-4">
         <h2 className="title">Deal of the day</h2>
 
-        <div className="showcase-wrapper has-scrollbar w-3/4 h-96 ">
-        <Carousel>
+        <div className="showcase-wrapper has-scrollbar h-96 p-1">
+        <Carousel rightControl=" " leftControl=" ">
           {products.map((product, index) => (
-            <div className="showcase-container min-w-full " key={index}>
+            <div className="showcase-container min-w-full" key={index}>
               <div className="showcase flex">
                 <div className="showcase-banner">
                   <Image
@@ -76,26 +76,26 @@ const Prodfutch = () => {
                   <div className="countdown-box">
                     <p className="countdown-desc">Hurry Up! Offer ends in:</p>
 
-                    <div className="countdown">
-                      <div className="countdown-content">
-                        <p className="display-number">360</p>
+                    <div className="countdown flex">
+                      <div className="countdown-content  bg-slate-400 px-2 py-3 m-auto text-center">
+                        <p className="display-number font-bold">360</p>
 
-                        <p className="display-text">Days</p>
+                        <p className="display-text text-xs">Days</p>
                       </div>
 
-                      <div className="countdown-content">
-                        <p className="display-number">24</p>
-                        <p className="display-text">Hours</p>
+                      <div className="countdown-content  bg-slate-400 px-2 py-3 m-auto text-center">
+                        <p className="display-number font-bold">24</p>
+                        <p className="display-text text-xs">Hours</p>
                       </div>
 
-                      <div className="countdown-content">
-                        <p className="display-number">59</p>
-                        <p className="display-text">Min</p>
+                      <div className="countdown-content  bg-slate-400 px-2 py-3 m-auto text-center">
+                        <p className="display-number font-bold">59</p>
+                        <p className="display-text text-xs">Min</p>
                       </div>
 
-                      <div className="countdown-content">
-                        <p className="display-number">00</p>
-                        <p className="display-text">Sec</p>
+                      <div className="countdown-content  bg-slate-400 px-2 py-3 m-auto text-center">
+                        <p className="display-number font-bold">00</p>
+                        <p className="display-text text-xs">Sec</p>
                       </div>
                     </div>
                   </div>
