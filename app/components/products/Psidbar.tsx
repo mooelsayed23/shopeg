@@ -111,10 +111,10 @@ const Psidbar = () => {
   ];
   return (
     <>
-      <div className="sidebar has-scrollbar w-1/4 sticky top-0 h-fit">
+      <div className="sidebar has-scrollbar w-1/4 sticky top-0 h-fit ">
         <div className="sidebar-category border p-4 rounded-lg">
           <div className="sidebar-top">
-            <h2 className="sidebar-title">Category</h2>
+            <h2 className="sidebar-title mb-2.5">Category</h2>
 
             <button
               className="sidebar-close-btn flex sm:hidden "
@@ -126,12 +126,12 @@ const Psidbar = () => {
 
           <ul className="sidebar-menu-category-list">
             {categories.map((category, index) => (
-              <li className="sidebar-menu-category" key={index}>
+              <li className="sidebar-menu-category py-2" key={index}>
                 <button
-                  className="sidebar-accordion-menu flex"
+                  className="sidebar-accordion-menu flex items-center justify-between w-full"
                   data-accordion-btn=""
                 >
-                  <div className="menu-title-flex flex justify-between">
+                  <div className="menu-title-flex flex justify-between gap-2">
                     <Image
                       src={category.icon}
                       alt={category.title}
