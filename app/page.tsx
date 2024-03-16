@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Banner />
       <Category />
-      <div className=" mx-auto sticky top-0">
+      <div className=" mx-auto">
         <div className="w-11/12 mx-auto flex ">        
         <Psidbar />
         <Productmin />

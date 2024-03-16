@@ -111,7 +111,7 @@ const Psidbar = () => {
   ];
   return (
     <>
-      <div className="sidebar has-scrollbar w-1/4 ">
+      <div className="sidebar has-scrollbar w-1/4 sticky top-0 h-fit">
         <div className="sidebar-category border p-4 rounded-lg">
           <div className="sidebar-top">
             <h2 className="sidebar-title">Category</h2>

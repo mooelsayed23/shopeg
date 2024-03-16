@@ -187,7 +187,7 @@ const Productmin = () => {
   ];
 
   return (
-    <div className="flex ">
+    <div className="flex h-[1000px]">
       <div className="">
         <h2 className="title">New Arrivals</h2>
 
