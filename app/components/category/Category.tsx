@@ -14,7 +14,7 @@ const categories = [
 
 const Category = () => {
   return (
-    <div className="category mt-8 w-11/12 m-auto">
+    <div className="category mt-8 w-11/12 mx-auto">
       <div className=" w-full">
         <div className="category-item-container has-scrollbar columns-4">
             

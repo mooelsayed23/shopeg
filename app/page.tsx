@@ -8,10 +8,15 @@ export default function Home() {
     <>
       <Banner />
       <Category />
-      <div className="flex justify-center">
+      <div className=" mx-auto sticky top-0">
+        <div className="w-11/12 mx-auto flex ">        
         <Psidbar />
         <Productmin />
+        
+        </div>
       </div>
+      <div className="h-[2000px]"> d</div>
+      
     </>
   );
 }
