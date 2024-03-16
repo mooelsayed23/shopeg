@@ -1,5 +1,6 @@
 import React from "react";
 import Cardproduct from "./Cardproduct";
+import Prodfutch from "./Prodfutch";
 
 const Productmin = () => {
   const newArrivalsG = [
@@ -187,7 +188,8 @@ const Productmin = () => {
   ];
 
   return (
-    <div className="flex h-[1000px]">
+    <div className="">
+    <div className="flex ">
       <div className="">
         <h2 className="title">New Arrivals</h2>
 
@@ -293,6 +295,9 @@ const Productmin = () => {
         </div>
       </div>
       
+    </div>
+    <Prodfutch/>
+    
     </div>
   );
 };
