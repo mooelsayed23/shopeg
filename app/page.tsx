@@ -4,13 +4,14 @@ import Productmin from "./components/products/Productmin";
 import Psidbar from "./components/products/Psidbar";
 
 export default function Home() {
- 
   return (
     <>
-    <Banner/>
-    <Category/>
-    <Psidbar/>
-    <Productmin/>
+      <Banner />
+      <Category />
+      <div className="flex justify-center">
+        <Psidbar />
+        <Productmin />
+      </div>
     </>
   );
 }
