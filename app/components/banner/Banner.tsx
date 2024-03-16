@@ -41,6 +41,8 @@ const Banner = () => {
               className="banner-img object-cover object-right p-0 m-0 block w-full h-full"
               width={1500}
               height={500}
+              priority={true}
+
             />
             <div className="banner-content absolute top-1/2 left-20 -translate-y-1/2">
               <p className="banner-subtitle">{banner.subtitle}</p>
