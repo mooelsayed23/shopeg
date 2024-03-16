@@ -1,5 +1,6 @@
 import Banner from "./components/banner/Banner";
 import Category from "./components/category/Category";
+import Prodmain from "./components/products/Prodmain";
 import Productmin from "./components/products/Productmin";
 import Psidbar from "./components/products/Psidbar";
 
@@ -11,9 +12,9 @@ export default function Home() {
       <div className=" mx-auto">
         <div className="w-11/12 mx-auto flex ">        
         <Psidbar />
-        <Productmin />
-        
+        <Productmin />        
         </div>
+      
       </div>
       
     </>

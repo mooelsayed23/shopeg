@@ -11,7 +11,43 @@
 /* body {
   
 } */
+/**
+ * scrollbar style
+ */
 
+ body::-webkit-scrollbar { width: 12px; }
+
+ body::-webkit-scrollbar-track {
+   background: var(--white);
+   border-left: 1px solid var(--cultured);
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+   background: hsl(0, 0%, 80%);
+   border: 3px solid var(--white);
+   -webkit-border-radius: 10px;
+           border-radius: 10px;
+ }
+ 
+ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+ 
+ .has-scrollbar { padding-bottom: 5px; }
+ 
+ .has-scrollbar::-webkit-scrollbar {
+   width: 12px; /* for vertical scroll */
+   height: 12px; /* for horizontal scroll */
+ }
+ .has-scrollbar::-webkit-scrollbar-thumb {
+   background: transparent;
+   border: 3px solid var(--white);
+   -webkit-border-radius: 20px;
+           border-radius: 20px;
+ }
+ 
+ .has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
+ 
+ .has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
+ 
 @layer utilities {
   .text-balance {
     text-wrap: balance;

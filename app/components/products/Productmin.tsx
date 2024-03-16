@@ -1,6 +1,7 @@
 import React from "react";
 import Cardproduct from "./Cardproduct";
 import Prodfutch from "./Prodfutch";
+import Prodmain from "./Prodmain";
 
 const Productmin = () => {
   const newArrivalsG = [
@@ -189,11 +190,11 @@ const Productmin = () => {
 
   return (
     <div className="">
-    <div className="flex ">
+    {/* <div className="flex ">
       <div className="">
         <h2 className="title">New Arrivals</h2>
 
-        <div className="flex w-[300px] overflow-auto flex-nowrap h-[490px] gap-5">
+        <div className="flex w-[300px] overflow-auto has-scrollbar flex-nowrap h-[490px] gap-5">
           <div className="w-[300px]">
             {newArrivalsG.map((item, index) => {
               return (
@@ -228,7 +229,7 @@ const Productmin = () => {
       <div className="">
         <h2 className="title">Trending</h2>
 
-        <div className="flex w-[300px] overflow-auto flex-nowrap h-[490px] gap-5">
+        <div className="flex w-[300px] overflow-auto has-scrollbar flex-nowrap h-[490px] gap-5">
           <div className="w-[300px]">
             {trendingone.map((item, index) => {
               return (
@@ -263,7 +264,7 @@ const Productmin = () => {
       <div className="">
         <h2 className="title">Top Rated</h2>
 
-        <div className="flex w-[300px] overflow-auto flex-nowrap h-[490px] gap-5">
+        <div className="flex w-[300px] overflow-auto has-scrollbar flex-nowrap h-[490px] gap-5">
           <div className="w-[300px]">
             {topRatedone.map((item, index) => {
               return (
@@ -296,7 +297,8 @@ const Productmin = () => {
       </div>
       
     </div>
-    <Prodfutch/>
+    <Prodfutch/> */}
+    <Prodmain/>
     
     </div>
   );
