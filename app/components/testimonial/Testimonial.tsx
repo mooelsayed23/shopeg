@@ -1,7 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import "./testimonial.scss";
-import { IoArrowUndoOutline, IoBoatOutline, IoCallOutline, IoRocketOutline, IoTicketOutline } from "react-icons/io5";
+import {
+  IoArrowUndoOutline,
+  IoBoatOutline,
+  IoCallOutline,
+  IoRocketOutline,
+  IoTicketOutline,
+} from "react-icons/io5";
 
 const Testimonial = () => {
   return (
@@ -10,7 +16,9 @@ const Testimonial = () => {
         <div className="container mx-auto">
           <div className="testimonials-box flex mx-auto w-11/12 justify-between">
             <div className="testimonial w-1/4 ">
-              <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">testimonial</h2>
+              <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">
+                testimonial
+              </h2>
 
               <div className="testimonial-card border  text-center  p-8">
                 <Image
@@ -21,18 +29,20 @@ const Testimonial = () => {
                   height="80"
                 />
 
-                <p className="testimonial-name my-4 font-bold text-lg text-zinc-500">Alan Doe</p>
+                <p className="testimonial-name my-4 font-bold text-lg text-zinc-500">
+                  Alan Doe
+                </p>
 
                 <p className="testimonial-title">CEO &amp; Founder Invision</p>
-
-                <Image
-                  src="/assets/images/icons/quotes.svg"
-                  alt="quotation"
-                  className="quotation-img mx-auto my-5"
-                  width="26"
-                  height="26"
-                />
-
+                <div className="w-10 mx-auto">
+                  <Image
+                    src="/assets/images/icons/quotes.svg"
+                    alt="quotation"
+                    className="quotation-img mx-auto my-5 w-auto h-full object-cover"
+                    width="26"
+                    height="26"
+                  />
+                </div>
                 <p className="testimonial-desc w-1/2 mx-auto">
                   Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor
                   sit amet.
@@ -51,23 +61,33 @@ const Testimonial = () => {
                 href="#"
                 className="w-1/2 h-1/2 p-5 items-center justify-center flex flex-col text-center absolute z-10 top-1/2 left-1/2 bg-white opacity-80 -translate-x-1/2 -translate-y-1/2"
               >
-                <p className="discount w-1/2 mx-auto font-extrabold text-xl bg-black p-1 text-white">25% Discount</p>
+                <p className="discount w-1/2 mx-auto font-extrabold text-xl bg-black p-1 text-white">
+                  25% Discount
+                </p>
 
-                <h2 className="cta-title text-4xl font-semibold my-2">Summer collection</h2>
+                <h2 className="cta-title text-4xl font-semibold my-2">
+                  Summer collection
+                </h2>
 
-                <p className="cta-text font-medium text-lg mb-1">Starting @ $10</p>
+                <p className="cta-text font-medium text-lg mb-1">
+                  Starting @ $10
+                </p>
 
-                <button className="cta-btn font-extrabold opacity-80 text-2xl">Shop now</button>
+                <button className="cta-btn font-extrabold opacity-80 text-2xl">
+                  Shop now
+                </button>
               </a>
             </div>
 
             <div className="service 1/4  ">
-              <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">Our Services</h2>
+              <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">
+                Our Services
+              </h2>
 
               <div className="service-container border ">
                 <a href="#" className="service-item">
-                  <div className="service-icon">                   
-                    <IoBoatOutline/>
+                  <div className="service-icon">
+                    <IoBoatOutline />
                   </div>
 
                   <div className="service-content">
@@ -78,7 +98,7 @@ const Testimonial = () => {
 
                 <a href="#" className="service-item">
                   <div className="service-icon">
-                    <IoRocketOutline/>
+                    <IoRocketOutline />
                   </div>
 
                   <div className="service-content">
@@ -89,7 +109,7 @@ const Testimonial = () => {
 
                 <a href="#" className="service-item">
                   <div className="service-icon">
-                    <IoCallOutline/>
+                    <IoCallOutline />
                   </div>
 
                   <div className="service-content">
@@ -100,7 +120,7 @@ const Testimonial = () => {
 
                 <a href="#" className="service-item">
                   <div className="service-icon">
-                  <IoArrowUndoOutline/>
+                    <IoArrowUndoOutline />
                   </div>
 
                   <div className="service-content">
@@ -111,7 +131,7 @@ const Testimonial = () => {
 
                 <a href="#" className="service-item">
                   <div className="service-icon">
-                  <IoTicketOutline/>
+                    <IoTicketOutline />
                   </div>
 
                   <div className="service-content">

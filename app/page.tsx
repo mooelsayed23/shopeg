@@ -1,5 +1,7 @@
 import Banner from "./components/banner/Banner";
+import Blog from "./components/blog/Blog";
 import Category from "./components/category/Category";
+import Footerlayout from "./components/footer/Footerlayout";
 import Productmin from "./components/products/Productmin";
 import Psidbar from "./components/products/Psidbar";
 import Testimonial from "./components/testimonial/Testimonial";
@@ -17,6 +19,8 @@ export default function Home() {
       
       </div>
       <Testimonial/>
+      <Blog/>
+      <Footerlayout/>
     </>
   );
 }
