@@ -137,7 +137,7 @@ const Psidbar = () => {
                       alt={category.title}
                       width={20}
                       height={20}
-                      className=" w-auto h-5"
+                      className=" w-auto h-5 object-cover"
                     />
                     <p className="menu-title">{category.title}</p>
                   </div>

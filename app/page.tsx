@@ -1,6 +1,5 @@
 import Banner from "./components/banner/Banner";
 import Category from "./components/category/Category";
-import Prodmain from "./components/products/Prodmain";
 import Productmin from "./components/products/Productmin";
 import Psidbar from "./components/products/Psidbar";
 

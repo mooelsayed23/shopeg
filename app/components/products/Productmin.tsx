@@ -189,8 +189,8 @@ const Productmin = () => {
   ];
 
   return (
-    <div className="">
-    {/* <div className="flex ">
+    <div className="mx-auto">
+    <div className="flex ">
       <div className="">
         <h2 className="title">New Arrivals</h2>
 
@@ -297,7 +297,7 @@ const Productmin = () => {
       </div>
       
     </div>
-    <Prodfutch/> */}
+    <Prodfutch/>
     <Prodmain/>
     
     </div>
