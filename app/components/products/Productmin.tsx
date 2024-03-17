@@ -189,13 +189,13 @@ const Productmin = () => {
   ];
 
   return (
-    <div className="mx-auto w-full ps-10">
-    <div className="flex gap-5 ">
-      <div className="grow">
+    <div className="mx-auto ps-10 w-3/4">
+    <div className="flex gap-5 pe-10">
+      <div className="w-1/3">
         <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">New Arrivals</h2>
 
-        <div className="flex w-[300px] gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-          <div className="w-[300px]">
+        <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
+          <div className="min-w-full">
             {newArrivalsG.map((item, index) => {
               return (
                 <Cardproduct
@@ -209,7 +209,7 @@ const Productmin = () => {
               );
             })}
           </div>
-          <div className="w-[300px]">
+          <div className="min-w-full">
             {newArrivalsM.map((item, index) => {
               return (
                 <Cardproduct
@@ -226,11 +226,11 @@ const Productmin = () => {
         </div>
       </div>
 
-      <div className="grow">
+      <div className="w-1/3">
         <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">Trending</h2>
 
-        <div className="flex w-[300px] gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-          <div className="w-[300px]">
+        <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
+          <div className="min-w-full">
             {trendingone.map((item, index) => {
               return (
                 <Cardproduct
@@ -244,7 +244,7 @@ const Productmin = () => {
               );
             })}
           </div>
-          <div className="w-[300px]">
+          <div className="min-w-full">
             {trendingtwo.map((item, index) => {
               return (
                 <Cardproduct
@@ -261,11 +261,11 @@ const Productmin = () => {
         </div>
       </div>
 
-      <div className="grow">
+      <div className="w-1/3">
         <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">Top Rated</h2>
 
-        <div className="flex w-[300px] gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-          <div className="w-[300px]">
+        <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
+          <div className="min-w-full">
             {topRatedone.map((item, index) => {
               return (
                 <Cardproduct
@@ -279,7 +279,7 @@ const Productmin = () => {
               );
             })}
           </div>
-          <div className="w-[300px]">
+          <div className="min-w-full">
             {topRatedtwo.map((item, index) => {
               return (
                 <Cardproduct

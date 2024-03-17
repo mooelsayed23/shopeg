@@ -16,7 +16,7 @@ const Cardproduct: React.FC<CardProductProps> = ({
 }) => {
   return (
     <>
-      <div className="showcase flex border rounded-md mb-5 py-3 w-[300px]">
+      <div className="showcase flex border rounded-md mb-5 py-3 min-w-full">
         <a href="#" className="showcase-img-box">
           <Image
             src={src}
