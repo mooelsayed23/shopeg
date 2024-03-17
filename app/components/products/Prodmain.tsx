@@ -124,10 +124,10 @@ const Prodmain = () => {
   ];
 
   return (
-    <div className="columns-2 w-full">
+    <div className="columns-2 w-full my-10 gap-10">
       {products.map((item, index) => (
         <div
-          className="product-card relative border bg-white rounded-xl hover:shadow-2xl mb-5"
+          className="product-card relative border bg-white rounded-xl hover:shadow-2xl mb-10 p-6"
           key={index}
         >
           <div className="product-images relative h-1/2 mx-auto">

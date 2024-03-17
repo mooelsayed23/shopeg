@@ -1,0 +1,31 @@
+.service {
+    
+    .service-container {
+        padding: 30px;
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+
+            .service-icon {
+                color: rgb(255, 141, 141);
+                font-size: xx-large;
+            }
+
+            .service-content {
+
+                .service-title {
+                    font-weight: 700;
+                    margin-bottom: 7px;
+                }
+
+                .service-desc {
+                    font-weight: 300;
+                    font-size: smaller;
+                }
+            }
+        }
+    }
+}

@@ -25,11 +25,11 @@ const products = [
 
 const Prodfutch = () => {
   return (
-    <>
-      <div className="product-featured border p-4 ">
-        <h2 className="title">Deal of the day</h2>
+    <div className="">
+      <div className="product-featured ">
+        <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">Deal of the day</h2>
 
-        <div className="showcase-wrapper has-scrollbar h-96 p-1">
+        <div className="showcase-wrapper has-scrollbar h-96 p-1 border">
           <Carousel rightControl=" " leftControl=" ">
             {products.map((product, index) => (
               <div className="showcase-container min-w-full" key={index}>
@@ -116,7 +116,7 @@ const Prodfutch = () => {
           </Carousel>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -189,12 +189,12 @@ const Productmin = () => {
   ];
 
   return (
-    <div className="mx-auto">
-    <div className="flex ">
-      <div className="">
-        <h2 className="title">New Arrivals</h2>
+    <div className="mx-auto w-full ps-10">
+    <div className="flex gap-5 ">
+      <div className="grow">
+        <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">New Arrivals</h2>
 
-        <div className="flex w-[300px] overflow-auto has-scrollbar flex-nowrap h-[490px] gap-5">
+        <div className="flex w-[300px] gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
           <div className="w-[300px]">
             {newArrivalsG.map((item, index) => {
               return (
@@ -226,10 +226,10 @@ const Productmin = () => {
         </div>
       </div>
 
-      <div className="">
-        <h2 className="title">Trending</h2>
+      <div className="grow">
+        <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">Trending</h2>
 
-        <div className="flex w-[300px] overflow-auto has-scrollbar flex-nowrap h-[490px] gap-5">
+        <div className="flex w-[300px] gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
           <div className="w-[300px]">
             {trendingone.map((item, index) => {
               return (
@@ -261,10 +261,10 @@ const Productmin = () => {
         </div>
       </div>
 
-      <div className="">
-        <h2 className="title">Top Rated</h2>
+      <div className="grow">
+        <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">Top Rated</h2>
 
-        <div className="flex w-[300px] overflow-auto has-scrollbar flex-nowrap h-[490px] gap-5">
+        <div className="flex w-[300px] gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
           <div className="w-[300px]">
             {topRatedone.map((item, index) => {
               return (
