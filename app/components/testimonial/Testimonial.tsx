@@ -26,7 +26,7 @@ const Testimonial = () => {
                 <p className="testimonial-title">CEO &amp; Founder Invision</p>
 
                 <Image
-                  src="./assets/images/icons/quotes.svg"
+                  src="/assets/images/icons/quotes.svg"
                   alt="quotation"
                   className="quotation-img mx-auto my-5"
                   width="26"

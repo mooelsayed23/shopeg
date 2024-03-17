@@ -111,7 +111,7 @@ const Psidbar = () => {
   ];
   return (
     <>
-      <div className="sidebar has-scrollbar w-1/4 sticky top-0 h-fit ">
+      <div className="sidebar has-scrollbar w-1/4 sticky top-0 h-fit text-nowrap">
         <div className="sidebar-category border p-4 rounded-lg">
           <div className="sidebar-top">
             <h2 className="sidebar-title mb-2.5">Category</h2>
@@ -131,13 +131,17 @@ const Psidbar = () => {
                   className="sidebar-accordion-menu flex items-center justify-between w-full"
                   data-accordion-btn=""
                 >
-                  <div className="menu-title-flex flex justify-between gap-2">
+                  <div className="menu-title-flex flex justify-between gap-2 max-w-6">
                     <Image
                       src={category.icon}
                       alt={category.title}
                       width={20}
                       height={20}
                       className=" w-auto h-5 object-cover"
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                      }}
                     />
                     <p className="menu-title">{category.title}</p>
                   </div>
@@ -154,7 +158,7 @@ const Psidbar = () => {
                   {category.submenu.map((item, idx) => (
                     <li className="sidebar-submenu-category" key={idx}>
                       <a href="#" className="sidebar-submenu-title">
-                        <p className="product-name">{item.name}</p>
+                        <p className="product-name text-nowrap">{item.name}</p>
                         <data
                           value={item.stock}
                           className="stock"
@@ -177,21 +181,23 @@ const Psidbar = () => {
           <div className="showcase-wrapper">
             <div className="showcase-container">
               {products.map((product, index) => (
-                <div className="showcase flex gap-3" key={index}>
-                  <a href="#" className="showcase-img-box">
+                <div className="showcase flex gap-1" key={index}>
+                  <a href="#" className=" w-20 shrink-0">
                     <Image
                       src={product.imgSrc}
                       alt={product.alt}
-                      className="showcase-img"
+                      className="showcase-img p-1 shrink-0"
                       width="75"
                       height="75"
-                      priority={true}
-
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                      }}
                     />
                   </a>
                   <div className="showcase-content">
                     <a href="#">
-                      <h4 className="showcase-title">{product.title}</h4>
+                      <h4 className="showcase-title text-nowrap text-sm">{product.title}</h4>
                     </a>
                     <div className="flex text-yellow-400">
                       <FaStar />
