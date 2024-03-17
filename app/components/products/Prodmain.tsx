@@ -127,10 +127,10 @@ const Prodmain = () => {
     <div className="columns-2 w-full my-10 gap-10">
       {products.map((item, index) => (
         <div
-          className="product-card relative border bg-white rounded-xl hover:shadow-2xl mb-10 p-6"
+          className="product-card relative border bg-white rounded-xl hover:shadow-2xl mb-10 p-6 overflow-hidden"
           key={index}
         >
-          <div className="product-images relative h-1/2 mx-auto">
+          <div className="product-images relative h-1/2 mx-auto ">
             <Image
               src={item.image_url1}
               alt={item.name}
@@ -150,7 +150,8 @@ const Prodmain = () => {
               onMouseLeave={() => setishover(999)}
             />
 
-            <p className="showcase-badge absolute top-0 left-0 z-30">SALE</p>
+            <p 
+            className={`showcase-badge absolute -top-3 -left-14 z-30 ${item.rating > 3 && item.rating < 5 ? "bg-black" : "bg-red-400"}  rounded-lg text-white rotate-[-45deg] text-xs py-1.5 px-12 `}>{item.rating > 3 && item.rating < 5 ? "SALE" : "NEW"}</p>
 
             <div
               onMouseEnter={() => setishover(index)}
