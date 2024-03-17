@@ -125,19 +125,19 @@ const Prodmain = () => {
   return (
     <div className="columns-2 px-5">
       {products.map((item, index) => (
-        <div className="product-card relative border bg-white rounded-xl hover:shadow-2xl p-5 mb-5" key={index}>
+        <div className="product-card relative border bg-white rounded-xl hover:shadow-2xl mb-5" key={index}>
           <div className="product-images relative ">
             <img
               src={item.image_url1}
               alt={item.name}
               width="300"
-              className="product-img default relative z-10 w-full h-full object-cover"
+              className="product-img default relative z-10 w-full  h-full object-cover "
             />
             <img
               src={item.image_url2}
               alt={item.name}
               width="300"
-              className={`product-img hover absolute top-0 z-20 opacity-0 hover:opacity-100 w-full h-full object-cover`}
+              className={`product-img absolute top-0 z-20 opacity-0 hover:opacity-100 w-full h-full  object-cover transition-all`}
               onMouseEnter={()=>setishover(index)}
               onMouseLeave={()=>setishover(999)}
             />
@@ -163,7 +163,7 @@ const Prodmain = () => {
             </div>
           </div>
 
-          <div className="showcase-content absolute bottom-0 left-0 z-40 m-4">
+          <div className="showcase-content">
             <a href="#" className="showcase-category">
               {item.category}
             </a>
