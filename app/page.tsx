@@ -19,7 +19,7 @@ export default function Home() {
       
       </div>
       <Testimonial/>
-      {/* <Blog/> */}
+      <Blog/>
       {/* <Footerlayout/> */}
     </>
   );

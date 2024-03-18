@@ -12,10 +12,10 @@ import {
 const Testimonial = () => {
   return (
     <>
-      <div className="my-12 w-full">
-        <div className="mx-auto w-11/12">
-          <div className="lg:flex lg:flex-wrap justify-between items-end">
-            <div className="testimonial lg:w-1/4 shrink-0 mb-14 grow">
+      <div className="my-12 mx-auto w-11/12">
+        <div className="">
+          <div className="lg:flex lg:flex-wrap lg:justify-between lg:items-center">
+            <div className="testimonial lg:w-1/4 shrink mb-14 grow">
               <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">
                 testimonial
               </h2>
@@ -80,12 +80,12 @@ const Testimonial = () => {
               </a>
             </div>
 
-            <div className="service lg:1/4 text-nowrap shrink-0">
+            <div className="service lg:1/4 text-nowrap shrink">
               <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">
                 Our Services
               </h2>
 
-              <div className="service-container border ">
+              <div className="service-container border flex xl:block flex-wrap shrink">
                 <a href="#" className="service-item">
                   <div className="service-icon">
                     <IoBoatOutline />
