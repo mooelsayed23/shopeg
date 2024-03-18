@@ -178,13 +178,13 @@ const Prodmain = () => {
             </div>
           </div>
 
-          <div className="showcase-content">
+          <div className="showcase-content ">
             <a href="#" className="showcase-category">
               {item.category}
             </a>
 
-            <a href="#">
-              <h3 className="showcase-title text-nowrap">{item.name}</h3>
+            <a href="#" className="">
+              <h3 className="showcase-title overflow-hidden text-ellipsis text-nowrap">{item.name}</h3>
             </a>
 
             <div className="showcase-rating flex">
