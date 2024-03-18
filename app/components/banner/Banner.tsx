@@ -42,7 +42,7 @@ const Banner = () => {
               <Image
                 src={banner.src}
                 alt={banner.alt}
-                className="banner-img object-cover object-right p-0 m-0 block w-full h-full"
+                className="banner-img object-fill object-right-top p-0 m-0 block w-full h-full"
                 width={1500}
                 height={500}
                 priority={true}

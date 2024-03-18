@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <nav className="desktop-navigation-menu hidden lg:flex mx-auto">
         <div className="container flex w-11/12 mx-auto">
-          <ul className="desktop-menu-category-list flex m-auto font-bold space-x-10 relative">
+          <ul className="desktop-menu-category-list flex m-auto font-bold space-x-10 relative text-gray-400">
             <li className="menu-category">
               <a href="#" className="menu-title">
                 Home
