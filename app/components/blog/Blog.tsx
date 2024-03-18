@@ -37,9 +37,9 @@ const blogPosts = [
   
   const Blog = () => {
     return (
-      <div className="flex flex-wrap mx-auto w-11/12 gap-6">
+      <div className="flex flex-wrap md:flex-nowrap mx-auto w-11/12 gap-3">
         {blogPosts.map((post, index) => (
-          <div className="blog-card " key={index}>
+          <div className="blog-card mx-auto" key={index}>
             <a href="#">
               <Image
                 src={post.imgSrc}
