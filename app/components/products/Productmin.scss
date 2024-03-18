@@ -1,0 +1,10 @@
+@media (min-width : 787px){
+.w-50-20{
+    width: calc(50% - 20px);
+}
+}
+@media (min-width : 1024px){
+    .w-50-20{
+        width: calc(33% - 20px);
+    }
+}

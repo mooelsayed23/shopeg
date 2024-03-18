@@ -85,6 +85,7 @@ const SidebarComponent: React.FC = () => {
       ],
     },
   ];
+  
   const products: Product[] = [
     {
       imgSrc: "/assets/images/products/1.jpg",
@@ -117,7 +118,7 @@ const SidebarComponent: React.FC = () => {
   ];
 
   return (
-    <div className="sidebar has-scrollbar w-1/4 sticky top-0 h-fit text-nowrap">
+    <div className="sidebar has-scrollbar w-1/4  sticky top-0 h-fit text-nowrap hidden lg:block">
       <CategoriesComponent categories={categories} />
       <BestSellersComponent products={products} />
     </div>

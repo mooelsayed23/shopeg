@@ -32,8 +32,8 @@ const BestSellersComponent: React.FC<Props> = ({ products }) => {
                 />
               </a>
               <div className="showcase-content items-center">
-                <a href="#">
-                  <h4 className="showcase-title text-nowrap tracking-wide text-sm">
+                <a href="#" className="text-ellipsis overflow-hidden">
+                  <h4 className="showcase-title text-nowrap tracking-wide text-sm ">
                     {product.title}
                   </h4>
                 </a>

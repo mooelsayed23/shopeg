@@ -25,8 +25,8 @@ const products = [
 
 const Prodfutch = () => {
   return (
-    <div className="">
-      <div className="product-featured ">
+    <div className="mx-auto w-11/12 lg:w-full lg:p-3">
+      <div className="product-featured mx-auto">
         <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">Deal of the day</h2>
 
         <div className="showcase-wrapper has-scrollbar h-96 p-1 border">

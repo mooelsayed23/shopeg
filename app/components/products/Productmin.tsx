@@ -2,7 +2,7 @@ import React from "react";
 import Cardproduct from "./Cardproduct";
 import Prodfutch from "./Prodfutch";
 import Prodmain from "./Prodmain";
-
+import "./Productmin.scss";
 const Productmin = () => {
   const newArrivalsG = [
     {
@@ -189,117 +189,122 @@ const Productmin = () => {
   ];
 
   return (
-    <div className="mx-auto ps-10 w-3/4">
-    <div className="flex gap-5 pe-10">
-      <div className="w-1/3">
-        <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">New Arrivals</h2>
+    <div className="mx-auto lg:w-3/4 ">
+      <div className="md:flex md:flex-wrap lg:flex lg:flex-nowrap lg:gap-5 justify-center">
+        <div className="w-full w-50-20 lg:shrink">
+          <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">
+            New Arrivals
+          </h2>
 
-        <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-          <div className="min-w-full">
-            {newArrivalsG.map((item, index) => {
-              return (
-                <Cardproduct
-                  src={item.image}
-                  title={item.name}
-                  category={item.category}
-                  price={item.price.toString()}
-                  oldPrice={item.oldPrice.toString()}
-                  key={index}
-                />
-              );
-            })}
+          <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
+            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+              {newArrivalsG.map((item, index) => {
+                return (
+                  <Cardproduct
+                    src={item.image}
+                    title={item.name}
+                    category={item.category}
+                    price={item.price.toString()}
+                    oldPrice={item.oldPrice.toString()}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+              {newArrivalsM.map((item, index) => {
+                return (
+                  <Cardproduct
+                    src={item.image}
+                    title={item.name}
+                    category={item.category}
+                    price={item.price.toString()}
+                    oldPrice={item.oldPrice.toString()}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
           </div>
-          <div className="min-w-full">
-            {newArrivalsM.map((item, index) => {
-              return (
-                <Cardproduct
-                  src={item.image}
-                  title={item.name}
-                  category={item.category}
-                  price={item.price.toString()}
-                  oldPrice={item.oldPrice.toString()}
-                  key={index}
-                />
-              );
-            })}
+        </div>
+
+        <div className="w-full w-50-20 lg:shrink">
+          <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">
+            Trending
+          </h2>
+
+          <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
+            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+              {trendingone.map((item, index) => {
+                return (
+                  <Cardproduct
+                    src={item.image}
+                    title={item.name}
+                    category={item.category}
+                    price={item.price.toString()}
+                    oldPrice={item.oldPrice.toString()}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+              {trendingtwo.map((item, index) => {
+                return (
+                  <Cardproduct
+                    src={item.image}
+                    title={item.name}
+                    category={item.category}
+                    price={item.price.toString()}
+                    oldPrice={item.oldPrice.toString()}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full w-50-20 lg:shrink">
+          <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">
+            Top Rated
+          </h2>
+
+          <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
+            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+              {topRatedone.map((item, index) => {
+                return (
+                  <Cardproduct
+                    src={item.image}
+                    title={item.name}
+                    category={item.category}
+                    price={item.price.toString()}
+                    oldPrice={item.oldPrice.toString()}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+              {topRatedtwo.map((item, index) => {
+                return (
+                  <Cardproduct
+                    src={item.image}
+                    title={item.name}
+                    category={item.category}
+                    price={item.price.toString()}
+                    oldPrice={item.oldPrice.toString()}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="w-1/3">
-        <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">Trending</h2>
-
-        <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-          <div className="min-w-full">
-            {trendingone.map((item, index) => {
-              return (
-                <Cardproduct
-                  src={item.image}
-                  title={item.name}
-                  category={item.category}
-                  price={item.price.toString()}
-                  oldPrice={item.oldPrice.toString()}
-                  key={index}
-                />
-              );
-            })}
-          </div>
-          <div className="min-w-full">
-            {trendingtwo.map((item, index) => {
-              return (
-                <Cardproduct
-                  src={item.image}
-                  title={item.name}
-                  category={item.category}
-                  price={item.price.toString()}
-                  oldPrice={item.oldPrice.toString()}
-                  key={index}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      <div className="w-1/3">
-        <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">Top Rated</h2>
-
-        <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-          <div className="min-w-full">
-            {topRatedone.map((item, index) => {
-              return (
-                <Cardproduct
-                  src={item.image}
-                  title={item.name}
-                  category={item.category}
-                  price={item.price.toString()}
-                  oldPrice={item.oldPrice.toString()}
-                  key={index}
-                />
-              );
-            })}
-          </div>
-          <div className="min-w-full">
-            {topRatedtwo.map((item, index) => {
-              return (
-                <Cardproduct
-                  src={item.image}
-                  title={item.name}
-                  category={item.category}
-                  price={item.price.toString()}
-                  oldPrice={item.oldPrice.toString()}
-                  key={index}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <Prodfutch/>
-    <Prodmain/>
-    
+      <Prodfutch/>
+      <Prodmain/>
     </div>
   );
 };

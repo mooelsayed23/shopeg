@@ -12,15 +12,15 @@ export default function Home() {
       <Banner />
       <Category />
       <div className=" mx-auto allproduct">
-        <div className="w-11/12 mx-auto flex ">        
+        <div className="lg:w-11/12 mx-auto flex ">        
         <SidebarComponent />
         <Productmin />        
         </div>
       
       </div>
-      <Testimonial/>
-      <Blog/>
-      <Footerlayout/>
+      {/* <Testimonial/> */}
+      {/* <Blog/> */}
+      {/* <Footerlayout/> */}
     </>
   );
 }
