@@ -124,7 +124,7 @@ const Prodmain = () => {
   ];
 
   return (
-    <div className="columns-2 w-full my-10 gap-10">
+    <div className="columns-2  my-10 gap-10 w-11/12 lg:w-full lg:p-3 mx-auto">
       {products.map((item, index) => (
         <div
           className="product-card relative border bg-white rounded-xl hover:shadow-2xl mb-10 p-6 overflow-hidden"
@@ -184,7 +184,7 @@ const Prodmain = () => {
             </a>
 
             <a href="#">
-              <h3 className="showcase-title">{item.name}</h3>
+              <h3 className="showcase-title text-nowrap">{item.name}</h3>
             </a>
 
             <div className="showcase-rating flex">
