@@ -3,7 +3,7 @@ import Blog from "./components/blog/Blog";
 import Category from "./components/category/Category";
 import Footerlayout from "./components/footer/Footerlayout";
 import Productmin from "./components/products/Productmin";
-import Psidbar from "./components/products/Psidbar";
+import SidebarComponent from "./components/products/sidebar/SidebarLayout";
 import Testimonial from "./components/testimonial/Testimonial";
 
 export default function Home() {
@@ -13,14 +13,14 @@ export default function Home() {
       <Category />
       <div className=" mx-auto allproduct">
         <div className="w-11/12 mx-auto flex ">        
-        {/* <Psidbar /> */}
-        {/* <Productmin />         */}
+        <SidebarComponent />
+        <Productmin />        
         </div>
       
       </div>
-      {/* <Testimonial/> */}
-      {/* <Blog/> */}
-      {/* <Footerlayout/> */}
+      <Testimonial/>
+      <Blog/>
+      <Footerlayout/>
     </>
   );
 }
