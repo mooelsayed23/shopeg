@@ -32,10 +32,10 @@ const Category = () => {
   return (
     <div className="category mt-8 w-11/12 mx-auto">
       <div className=" w-full">
-        <div className="category-item-container has-scrollbar flex overflow-auto flex-nowrap gap-5 justify-between">
+        <div className=" flex flex-nowrap justify-between overflow-auto gap-5">
           {categories.map((category, index) => (
             <div
-              className="cat flex border border-[#ededed] rounded-[10px] items-center shrink text-nowrap p-4 gap-4 mb-5"
+              className="cat flex border border-[#ededed] rounded-[10px] items-center text-nowrap p-4 gap-4 mb-5 shrink-0"
               key={index}
             >
               <div className="category-img-box p-3 bg-neutral-200">
