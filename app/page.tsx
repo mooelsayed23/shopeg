@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Banner />
       <Category />
-      <div className=" mx-auto allproduct">
+      {/* <div className=" mx-auto allproduct">
         <div className="w-11/12 mx-auto flex ">        
         <Psidbar />
         <Productmin />        
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       <Testimonial/>
       <Blog/>
-      <Footerlayout/>
+      <Footerlayout/> */}
     </>
   );
 }

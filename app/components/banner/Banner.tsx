@@ -31,27 +31,30 @@ const banners = [
 
 const Banner = () => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto overflow-hidden">
       <div className="m-auto w-11/12 ">
         <Carousel rightControl=" " leftControl=" ">
           {banners.map((banner, index) => (
             <div
-              className="relative h-[450px] aspect-w-auto aspect-h-auto rounded overflow-hidden"
+              className="relative min-w-full max-h-[450px] aspect-square rounded overflow-hidden"
               key={index}
             >
               <Image
                 src={banner.src}
                 alt={banner.alt}
-                className="banner-img object-fill object-right-top p-0 m-0 block w-full h-full"
+                className=" object-cover object-right-top w-full h-full p-0 m-0 block"
                 width={1500}
                 height={500}
                 priority={true}
               />
-              <div className="banner-content absolute top-1/2 left-20 -translate-y-1/2">
-                <p className="banner-subtitle">{banner.subtitle}</p>
-                <h2 className="banner-title">{banner.title}</h2>
-                <p className="banner-text">{banner.text}</p>
-                <a href="#" className="banner-btn">
+              <div
+                className="banner-content absolute bottom-6 left-6
+               bg-white sm:bg-transparent opacity-75 py-5 px-6 max-w-[400px]"
+              >
+                <p className="banner-subtitle text-red-400 text-lg">{banner.subtitle}</p>
+                <h2 className="banner-title font-extrabold text-lg sm:text-3xl mb-2 font-sans">{banner.title}</h2>
+                <p className="banner-text text-xl font-semibold hidden sm:block my-5 text-gray-600 font-serif">{banner.text}</p>
+                <a href="#" className="banner-btn bg-red-400 text-white p-1 rounded-md ">
                   {banner.btnText}
                 </a>
               </div>
