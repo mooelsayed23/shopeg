@@ -12,15 +12,15 @@ import {
 const Testimonial = () => {
   return (
     <>
-      <div className="my-12">
-        <div className="container mx-auto">
-          <div className="testimonials-box flex mx-auto w-11/12 justify-between">
-            <div className="testimonial w-1/4 ">
+      <div className="my-12 w-full">
+        <div className="mx-auto w-11/12">
+          <div className="lg:flex lg:flex-wrap justify-between items-end">
+            <div className="testimonial lg:w-1/4 shrink-0 mb-14 grow">
               <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">
                 testimonial
               </h2>
 
-              <div className="testimonial-card border  text-center  p-8">
+              <div className="testimonial-card border rounded-lg mb-6 text-center py-7 px-5 sm:p-8">
                 <Image
                   src="/assets/images/testimonial-1.jpg"
                   alt="alan doe"
@@ -50,36 +50,37 @@ const Testimonial = () => {
               </div>
             </div>
 
-            <div className="cta-container relative w-2/4">
+            <div className="cta-container relative rounded-lg overflow-hidden lg:w-2/4">
               <img
                 src="./assets/images/cta-banner.jpg"
                 alt="summer collection"
-                className="cta-banner w-full"
+                className="cta-banner w-full h-full md:h-fit object-cover "
               />
 
               <a
                 href="#"
-                className="w-1/2 h-1/2 p-5 items-center justify-center flex flex-col text-center absolute z-10 top-1/2 left-1/2 bg-white opacity-80 -translate-x-1/2 -translate-y-1/2"
+                className=" p-5 items-center justify-center flex flex-col text-center absolute z-10 
+                bg-white opacity-70 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-fit"
               >
-                <p className="discount w-1/2 mx-auto font-extrabold text-xl bg-black p-1 text-white">
+                <p className="discount text-xs rounded-md text-nowrap bg-black p-1 text-white">
                   25% Discount
                 </p>
 
-                <h2 className="cta-title text-4xl font-semibold my-2">
+                <h2 className="cta-title text-lg font-bold my-2">
                   Summer collection
                 </h2>
 
-                <p className="cta-text font-medium text-lg mb-1">
+                <p className="cta-text font-medium text-lg mb-1 text-nowrap">
                   Starting @ $10
                 </p>
 
-                <button className="cta-btn font-extrabold opacity-80 text-2xl">
+                <button className="cta-btn font-extrabold opacity-80 text-2xl text-nowrap">
                   Shop now
                 </button>
               </a>
             </div>
 
-            <div className="service 1/4  ">
+            <div className="service lg:1/4 text-nowrap shrink-0">
               <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">
                 Our Services
               </h2>

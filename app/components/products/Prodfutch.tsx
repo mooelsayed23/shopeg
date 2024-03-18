@@ -29,22 +29,22 @@ const Prodfutch = () => {
       <div className="product-featured mx-auto">
         <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7">Deal of the day</h2>
 
-        <div className="showcase-wrapper has-scrollbar h-96 p-1 border">
+        <div className="showcase-wrapper has-scrollbar h-[500px] sm:h-96 p-1 border">
           <Carousel rightControl=" " leftControl=" ">
             {products.map((product, index) => (
               <div className="showcase-container min-w-full" key={index}>
-                <div className="showcase flex items-center gap-5">
-                  <div className="showcase-banner w-1/2">
+                <div className="showcase sm:flex items-center sm:gap-5">
+                  <div className="showcase-banner sm:w-1/2">
                     <Image
                       src={product.image}
                       alt={product.name}
-                      className="showcase-img"
+                      className="showcase-img h-auto max-h-48 sm:max-h-full w-full aspect-square object-fill sm:object-cover"
                       width={600}
                       height={500}
                     />
                   </div>
 
-                  <div className="showcase-content w-1/2">
+                  <div className="showcase-content sm:w-1/2">
                     <div className="flex">
                       <BiSolidStar className="text-yellow-400" />
                       <BiSolidStar className="text-yellow-400" />

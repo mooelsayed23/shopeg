@@ -124,7 +124,7 @@ const Prodmain = () => {
   ];
 
   return (
-    <div className="columns-2  my-10 gap-10 w-11/12 lg:w-full lg:p-3 mx-auto">
+    <div className="sm:columns-2 columns-1  my-10 gap-10 w-11/12 lg:w-full lg:p-3 mx-auto">
       {products.map((item, index) => (
         <div
           className="product-card relative border bg-white rounded-xl hover:shadow-2xl mb-10 p-6 overflow-hidden"
