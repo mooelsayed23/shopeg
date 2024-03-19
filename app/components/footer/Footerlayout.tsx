@@ -2,6 +2,7 @@ import React from "react";
 import Footercat from "./Footercat";
 import Footernav from "./Footernav";
 import Footerbuy from "./Footerbuy";
+import Footermob from "./Footermob";
 
 const Footerlayout = () => {
   return (
@@ -9,6 +10,7 @@ const Footerlayout = () => {
       <Footercat />
       <Footernav />
       <Footerbuy/>
+      <Footermob/>
     </div>
   );
 };
