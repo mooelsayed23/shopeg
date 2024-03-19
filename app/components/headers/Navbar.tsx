@@ -1,19 +1,21 @@
 import Image from "next/image";
 import "./navbar.scss";
-
-const Navbar = () => {
+interface props {
+  hide?: boolean | undefined;
+}
+const Navbar: React.FC<props> = ({ hide }) => {
   return (
     <>
-      <nav className="desktop-navigation-menu hidden lg:flex mx-auto">
+      <nav className="desktop-navigation-menu  mx-auto">
         <div className="container flex w-11/12 mx-auto">
-          <ul className="desktop-menu-category-list flex m-auto font-bold space-x-10 relative text-gray-400">
-            <li className="menu-category">
+          <ul className="desktop-menu-category-list text-nowrap lg:flex m-auto font-bold space-x-10 relative text-gray-400">
+            <li className={` menu-category `}>
               <a href="#" className="menu-title">
                 Home
               </a>
             </li>
 
-            <li className="menu-category">
+            <li className={` menu-category ${hide && "hidden"}`}>
               <a href="#" className="menu-title">
                 Categories
               </a>
@@ -58,7 +60,7 @@ const Navbar = () => {
 
                 <ul className="dropdown-panel-list">
                   <li className="menu-title">
-                    <a href="#">Men{"\'"}s</a>
+                    <a href="#">Men{"'"}s</a>
                   </li>
 
                   <li className="panel-list-item">
@@ -95,7 +97,7 @@ const Navbar = () => {
 
                 <ul className="dropdown-panel-list">
                   <li className="menu-title">
-                    <a href="#">Women{"\'"}s</a>
+                    <a href="#">Women{"'"}s</a>
                   </li>
 
                   <li className="panel-list-item">
@@ -171,7 +173,7 @@ const Navbar = () => {
 
             <li className="menu-category">
               <a href="#" className="menu-title">
-                Men{"\'"}s
+                Men{"'"}s
               </a>
 
               <ul className="dropdown-list">
@@ -195,7 +197,7 @@ const Navbar = () => {
 
             <li className="menu-category">
               <a href="#" className="menu-title">
-                Women{"\'"}s
+                Women{"'"}s
               </a>
 
               <ul className="dropdown-list">

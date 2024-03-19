@@ -2,7 +2,7 @@ import React from "react";
 import Footercat from "./Footercat";
 import Footernav from "./Footernav";
 import Footerbuy from "./Footerbuy";
-import Footermob from "./Footermob";
+import Footermob from "../Sidbarmob/Footermob";
 
 const Footerlayout = () => {
   return (
