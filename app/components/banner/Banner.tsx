@@ -49,7 +49,7 @@ const Banner = () => {
               />
               <div
                 className="banner-content absolute bottom-6 left-6
-               bg-white sm:bg-transparent opacity-75 py-5 px-6 max-w-[400px]"
+               bg-white sm:bg-transparent bg-opacity-65 py-5 px-6 max-w-[200px] sm:max-w-[400px]"
               >
                 <p className="banner-subtitle text-red-400 text-lg">{banner.subtitle}</p>
                 <h2 className="banner-title font-extrabold text-lg sm:text-3xl mb-2 font-sans">{banner.title}</h2>
