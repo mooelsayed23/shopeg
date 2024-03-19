@@ -118,7 +118,7 @@ const SidebarComponent: React.FC = () => {
   ];
 
   return (
-    <div className="sidebar has-scrollbar w-1/4  sticky top-0 h-fit text-nowrap hidden lg:block">
+    <div className="sidebar has-scrollbar  sticky top-0 h-fit text-nowrap">
       <CategoriesComponent categories={categories} />
       <BestSellersComponent products={products} />
     </div>

@@ -16,9 +16,10 @@ const CategoriesComponent: React.FC<Props> = ({ categories }) => {
   };
 
   return (
-    <div className="sidebar-category border p-4 rounded-lg">
-      <div className="sidebar-top">
+    <div className="sidebar-category lg:border p-4 rounded-lg">
+      <div className="sidebar-top flex justify-between items-center">
         <h2 className="sidebar-title mb-2">Category</h2>
+        <div className=" pointer-events-auto font-semibold text-black">X</div>
       </div>
 
       <ul className="sidebar-menu-category-list transition">

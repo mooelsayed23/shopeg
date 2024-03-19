@@ -12,8 +12,10 @@ export default function Home() {
       <Banner />
       <Category />
       <div className=" mx-auto allproduct">
-        <div className="lg:w-11/12 mx-auto flex ">        
+        <div className="lg:w-11/12 mx-auto flex ">  
+        <div className="hidden lg:block">     
         <SidebarComponent />
+        </div> 
         <Productmin />        
         </div>
       
