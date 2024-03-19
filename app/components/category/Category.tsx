@@ -30,7 +30,7 @@ const categories = [
 
 const Category = () => {
   return (
-    <div className="category mt-8 w-11/12 mx-auto">
+    <div className="category my-8 w-11/12 mx-auto">
       <div className=" w-full">
         <div className="has-scrollbar flex flex-nowrap justify-between overflow-auto gap-5">
           {categories.map((category, index) => (
@@ -46,9 +46,9 @@ const Category = () => {
                   height="30"
                 />
               </div>
-              <div className="category-content-box flex flex-col w-full">
-                <div className="category-content-flex flex justify-between grow w-full items-center">
-                  <h3 className="category-item-title font-bold">
+              <div className=" flex flex-col w-full h-full">
+                <div className=" flex justify-between grow w-full items-center mb-2">
+                  <h3 className="category-item-title font-semibold font-sans ">
                     {category.title}
                   </h3>
                   <p className="category-item-amount text-xs">
@@ -57,7 +57,7 @@ const Category = () => {
                 </div>
                 <a
                   href="#"
-                  className="category-btn text-pink-500 font-semibold"
+                  className="category-btn text-pink-500 text-xs font-medium"
                 >
                   Show all
                 </a>
