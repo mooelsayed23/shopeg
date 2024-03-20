@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Navbar from "../headers/Navbar";
 import { IoCaretBackOutline } from "react-icons/io5";
@@ -7,15 +8,23 @@ import {
   PiLinkedinLogo,
   PiTwitterLogo,
 } from "react-icons/pi";
+import { useDispatch } from "react-redux";
+import { toggleMobNav } from "@/app/datastore/showAsideSlice";
 
 const SidebarNav = () => {
+  const dispatch = useDispatch();
   return (
     <>
       <div className="fixed left-0 top-0 z-50 bg-white border-r w-64 h-screen lg:hidden">
         <div className="menu-top flex justify-between items-center m-5 mb-0 pb-5 border-b">
           <h2 className="menu-title text-red-500 font-black text-xl">Menu</h2>
 
-          <button className="menu-close-btn">X</button>
+          <button
+            className="menu-close-btn"
+            onClick={() => dispatch(toggleMobNav())}
+          >
+            X
+          </button>
         </div>
         {/*  */}
         <Navbar hide />

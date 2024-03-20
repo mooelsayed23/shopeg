@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import { toggleMobNav, togglemobsidebar } from "@/app/datastore/showAsideSlice";
+import React from "react";
 import {
   IoBagOutline,
   IoGridOutline,
@@ -7,24 +8,18 @@ import {
   IoHomeOutline,
   IoMenuOutline,
 } from "react-icons/io5";
-import Sidebar from "./Sidebar";
-import SidebarNav from "./SidebarNav";
+import { useDispatch } from "react-redux";
 
 const Footermob = () => {
-  const [hideside, setHideside] = useState(true);
-  const [hidenav, setHideNave] = useState(true);
-  const opennav = () => {
-    setHideNave(!hidenav);
-    setHideside(true);
-  };
-  const openSide = () => {
-    setHideside(!hideside);
-    setHideNave(true);
-  };
+  
+  const dispatch = useDispatch(); 
   return (
     <>
       <div className="fixed bottom-0 left-1/2 -translate-x-1/2 bg-white shadow-md shadow-gray-500  rounded-t-lg flex justify-evenly w-full sm:w-2/3 md:w-1/2 lg:hidden lg:w-0 text-gray-800 p-3 z-50 items-center">
-        <button className="action-btn size-8" onClick={opennav}>
+        <button
+          className="action-btn size-8"
+          onClick={() => dispatch(toggleMobNav())}
+        >
           <IoMenuOutline className="size-full" />
         </button>
 
@@ -46,12 +41,10 @@ const Footermob = () => {
           </span>
         </button>
 
-        <button className="action-btn size-6" onClick={openSide}>
+        <button className="action-btn size-6" onClick={() => dispatch(togglemobsidebar())}>
           <IoGridOutline className="size-full" />
         </button>
       </div>
-      {hideside ? "" : <Sidebar />}
-      {hidenav ? "" : <SidebarNav />}
     </>
   );
 };

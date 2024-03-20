@@ -3,14 +3,16 @@ import React, { useState } from "react";
 import { IoRemoveOutline, IoAddOutline } from "react-icons/io5";
 import Image from "next/image";
 import { Category } from "./SidebarLayout";
+import { togglemobsidebar } from "@/app/datastore/showAsideSlice";
+import { useDispatch } from "react-redux";
 
 interface Props {
   categories: Category[];
 }
 
 const CategoriesComponent: React.FC<Props> = ({ categories }) => {
+  const dispatch = useDispatch();
   const [shownum, setShownum] = useState(90);
-
   const hShow = (index: number) => {
     setShownum((prevState) => (prevState === index ? 90 : index));
   };
@@ -19,7 +21,7 @@ const CategoriesComponent: React.FC<Props> = ({ categories }) => {
     <div className="sidebar-category lg:border p-4 rounded-lg">
       <div className="sidebar-top flex justify-between items-center">
         <h2 className="sidebar-title mb-2">Category</h2>
-        <div className=" pointer-events-auto font-semibold text-black">X</div>
+        <div className=" pointer-events-auto font-semibold text-black" onClick={() => dispatch(togglemobsidebar())}>X</div>
       </div>
 
       <ul className="sidebar-menu-category-list transition">
