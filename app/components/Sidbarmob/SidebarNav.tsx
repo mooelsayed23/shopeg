@@ -114,7 +114,10 @@ const SidebarNav = () => {
           </ul>
         </div>
       </div>
-      <div className="fixed w-full h-full top-0 left-0 bg-gray-300 bg-opacity-50 z-40 "></div>
+      <div
+        className="fixed w-full h-full top-0 left-0 bg-gray-300 bg-opacity-50 z-40 "
+        onClick={() => dispatch(toggleMobNav())}
+      ></div>
     </>
   );
 };

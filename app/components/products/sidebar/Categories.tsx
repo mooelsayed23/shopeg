@@ -21,7 +21,12 @@ const CategoriesComponent: React.FC<Props> = ({ categories }) => {
     <div className="sidebar-category lg:border p-4 rounded-lg">
       <div className="sidebar-top flex justify-between items-center">
         <h2 className="sidebar-title mb-2">Category</h2>
-        <div className=" pointer-events-auto font-semibold text-black" onClick={() => dispatch(togglemobsidebar())}>X</div>
+        <div
+          className=" pointer-events-auto font-semibold text-black"
+          onClick={() => dispatch(togglemobsidebar())}
+        >
+          X
+        </div>
       </div>
 
       <ul className="sidebar-menu-category-list transition">
@@ -56,7 +61,10 @@ const CategoriesComponent: React.FC<Props> = ({ categories }) => {
               data-accordion=""
             >
               {category.submenu.map((item, idx) => (
-                <li className="sidebar-submenu-category hover:bg-slate-50" key={idx}>
+                <li
+                  className="sidebar-submenu-category hover:bg-slate-50"
+                  key={idx}
+                >
                   <a
                     href="#"
                     className="sidebar-submenu-title hover:text-black  flex justify-between items-center py-2 my-1 text-gray-500 text-sm"
