@@ -15,7 +15,7 @@ const SidebarNav = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <div className="fixed left-0 top-0 z-50 bg-white border-r w-64 h-screen lg:hidden">
+      <div className="fixed left-0 top-0 z-50 bg-white border-r w-64 h-full overflow-y-auto lg:hidden">
         <div className="menu-top flex justify-between items-center m-5 mb-0 pb-5 border-b">
           <h2 className="menu-title text-red-500 font-black text-xl">Menu</h2>
 
