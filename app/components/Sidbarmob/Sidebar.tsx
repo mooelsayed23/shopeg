@@ -6,7 +6,7 @@ const Sidebar = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <div className="fixed left-0 top-0 w-72 p-3 text-sm z-50 h-fit bg-white overflow-y-scroll border-r">
+      <div className="fixed h-full left-0 top-0 w-72 p-3 text-sm z-50 bg-white overflow-y-scroll border-r">
         <SidebarLayout />
       </div>
       <div
