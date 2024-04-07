@@ -190,7 +190,7 @@ const Productmin = () => {
 
   return (
     <div className="mx-auto w-11/12 lg:w-3/4 ">
-      <div className="md:flex md:flex-wrap lg:flex lg:flex-nowrap lg:gap-5 justify-center">
+      <div className="md:flex md:flex-wrap lg:flex lg:flex-nowrap md:gap-5 justify-center">
         <div className="w-full w-50-20 lg:shrink">
           <h2 className="title font-semibold text-lg border-b pb-2.5 mb-7 ">
             New Arrivals
