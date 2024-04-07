@@ -5,7 +5,7 @@ import {
 } from "react-icons/io5";
 const footerLists = [
   {
-    title: "Popular Categories",
+    title: "Popular",
     links: ["Fashion", "Electronic", "Cosmetic", "Health", "Watches"],
   },
   {
@@ -50,7 +50,7 @@ const Footer = () => {
   return (
     <div className="md:flex text-nowrap mx-auto w-11/12 gap-5 justify-between border-b">
       {footerLists.map((list, index) => (
-        <ul className="footer-nav-list w-1/5 mb-10" key={index}>
+        <ul className="footer-nav-list md:w-1/5 mb-10" key={index}>
           <li className="footer-nav-item relative">
             <h2 className="nav-title font-bold text-xl text-white py-2 mt-8 after:bg-red-400 after:absolute after:bottom-0 after:left-0 after:h-px after:w-14 mb-6 sm:text-wrap ">
               {list.title}
