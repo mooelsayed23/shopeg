@@ -197,7 +197,7 @@ const Productmin = () => {
           </h2>
 
           <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+            <div className="min-w-full sm:min-w-[48%] md:min-w-full">
               {newArrivalsG.map((item, index) => {
                 return (
                   <Cardproduct
@@ -211,7 +211,7 @@ const Productmin = () => {
                 );
               })}
             </div>
-            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+            <div className="min-w-full sm:min-w-[48%] md:min-w-full">
               {newArrivalsM.map((item, index) => {
                 return (
                   <Cardproduct
@@ -234,7 +234,7 @@ const Productmin = () => {
           </h2>
 
           <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+            <div className="min-w-full sm:min-w-[48%] md:min-w-full">
               {trendingone.map((item, index) => {
                 return (
                   <Cardproduct
@@ -248,7 +248,7 @@ const Productmin = () => {
                 );
               })}
             </div>
-            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+            <div className="min-w-full sm:min-w-[48%] md:min-w-full">
               {trendingtwo.map((item, index) => {
                 return (
                   <Cardproduct
@@ -271,7 +271,7 @@ const Productmin = () => {
           </h2>
 
           <div className="flex min-w-full gap-5 overflow-auto has-scrollbar flex-nowrap h-[490px] ">
-            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+            <div className="min-w-full sm:min-w-[48%] md:min-w-full">
               {topRatedone.map((item, index) => {
                 return (
                   <Cardproduct
@@ -285,7 +285,7 @@ const Productmin = () => {
                 );
               })}
             </div>
-            <div className="min-w-full sm:min-w-[50%] md:min-w-full">
+            <div className="min-w-full sm:min-w-[48%] md:min-w-full">
               {topRatedtwo.map((item, index) => {
                 return (
                   <Cardproduct
